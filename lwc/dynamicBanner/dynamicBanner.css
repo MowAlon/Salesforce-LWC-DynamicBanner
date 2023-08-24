@@ -1,0 +1,33 @@
+.main {
+    display: flex;
+    gap: 1em;
+}
+.main > div {
+    border-radius: 4px;
+    padding: 1em;
+}
+.banner {
+    display: flex;
+}
+.banner > div {
+    display: inline-block;
+}
+.collapse-arrow {
+    margin: 0 0.5em 0 -0.5em;
+    /* vertical-align: top; */
+}
+.collapse-arrow lightning-icon {
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 3px;
+}
+h1 {
+    font-size: larger;
+    font-weight: bolder;
+    text-align: left;
+}
+.content {
+    margin-top: 1em;
+}
