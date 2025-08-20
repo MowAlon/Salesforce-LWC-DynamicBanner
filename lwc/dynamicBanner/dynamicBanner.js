@@ -50,8 +50,6 @@ export default class DynamicBanner extends NavigationMixin(LightningElement) {
     fieldData = {};
     recordData;
 
-    // get bannerLinkTarget1() { return this.linkNewTab1 ? '_blank' : '_self'; }
-    // get bannerLinkTarget2() { return this.linkNewTab2 ? '_blank' : '_self'; }
     get isLink1()           { return !!this.bannerLink1; }
     get isLink2()           { return !!this.bannerLink2; }
     get hide()              { return this.isLoading || !this.visible}
@@ -233,20 +231,6 @@ export default class DynamicBanner extends NavigationMixin(LightningElement) {
                 return field.replace(/^\([^)]*\)/, '')
             }
 
-            // fieldValue(record, field) {
-            //     // Recursive solution for accessing fields across unlimited parent relationships
-
-            //     if (record) {
-            //         if (field.indexOf('.') == -1) {return record[field] != null && record[field] != undefined ? record[field] : '';}
-            //         else {
-            //             let parentRelationshipField = field.split('.')[0];
-            //             let parentRecord            = record[parentRelationshipField];
-            //             let parentField             = field.replace(parentRelationshipField + '.', '');
-            //             return this.fieldValue(parentRecord, parentField);
-            //         }
-            //     } else {return '';}
-            // }
-
     setVisibility() {
         // Custom logic can be applied to a collection of filters like in other areas of Salesforce, using numbers, parentheses, and English operators [AND, OR, NOT] (must be fully capitalized). Also supports coded operators [&&, ||, !].
 
@@ -297,9 +281,7 @@ export default class DynamicBanner extends NavigationMixin(LightningElement) {
                 }
                 return null;
             }
-            // needsTranslation(text) {
-            //     return text.startsWith(this.markupL) && text.endsWith(this.markupR);
-            // }
+
         evaluatedFilterPart(evaluatedFilters, part) {
             return (Number.isInteger(Number(part))) ?  evaluatedFilters[Number(part) - 1] : part;
         }
