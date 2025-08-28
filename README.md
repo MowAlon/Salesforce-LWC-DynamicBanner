@@ -1,4 +1,7 @@
 # Salesforce-LWC-DynamicBanner
+
+Note: This is an older version. I'll probably update this (eventually) to keep it in line with the newest version. If you want the newer one, find it in the larger [Mile High Dreamin' 2025](https://github.com/MowAlon/MHD25) repository which collects several tools into a single package.
+
 Add a highly customizable banner to any record page
 
 **Features**
